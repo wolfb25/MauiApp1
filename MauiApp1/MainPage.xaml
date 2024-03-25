@@ -4,59 +4,58 @@
 			 x:Class="MauiApp1.MainPage">
 
 	<ScrollView>
-		<VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition Width="2*"/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
 
 			<Label
-                Text="Új ország felvétele"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+		Grid.ColumnSpan="3"
+		Text="Új ország felvétele"
+		Style="{StaticResource Headline}"
+		SemanticProperties.HeadingLevel="Level1" />
 
-			<HorizontalStackLayout Margin="20, 0">
-				<Label
-					Text="Ország:"
-					FontSize="Medium"
-					VerticalTextAlignment="Center" 
-					Margin="0, 0, 15, 0"/>
+			<Label
+		Grid.Row="1"
+		Grid.Column="0"
+		Text="Ország:"
+		FontSize="Medium"
+		VerticalTextAlignment="Center"
+		HorizontalOptions="End"
+		Margin="0, 0, 15, 0"/>
 
-				<Entry x:Name="orszag"
-                    Placeholder="Írja be az ország nevét:" />
-			</HorizontalStackLayout>
+			<Entry x:Name="orszag"
+			Grid.Row="1"
+			Grid.Column="1"
+			HeightRequest="70"
+			Placeholder="Írja be az ország nevét:" />
 
-			<HorizontalStackLayout Margin="20, 0">
-				<Label
-					Text="Terület:"
-					FontSize="Medium"
-					VerticalTextAlignment="Center" 
-					Margin="0, 0, 15, 0"/>
+			<Label
+		Grid.Row="2"
+		Grid.Column="0"
+		Text="Terület:"
+		FontSize="Medium"
+		VerticalTextAlignment="Center"
+		HorizontalOptions="End"
+		Margin="0, 0, 15, 0"/>
 
-				<Entry x:Name="terulet"
-                    Placeholder="Írja be a területet:" />
-			</HorizontalStackLayout>
+			<Entry x:Name="terulet"
+			Grid.Row="2"
+			Grid.Column="1"
+			Placeholder="Írja be a területet:" />
 
-			<HorizontalStackLayout Margin="20, 0">
-				<Label
-					Text="Népesség:"
-					FontSize="Medium"
-					VerticalTextAlignment="Center" 
-					Margin="0, 0, 15, 0"/>
+		</Grid>
 
-				<Entry x:Name="nepesseg"
-                    Placeholder="Írja be a népesség számát:" />
-			</HorizontalStackLayout>
-
-			<HorizontalStackLayout Margin="20, 0">
-				<Label
-					Text="Főváros:"
-					FontSize="Medium"
-					VerticalTextAlignment="Center" 
-					Margin="0, 0, 15, 0"/>
-
-				<Entry x:Name="fovaros"
-                    Placeholder="Írja be a főváros nevét:" />
-			</HorizontalStackLayout>
-
-		</VerticalStackLayout>
 	</ScrollView>
 </ContentPage>

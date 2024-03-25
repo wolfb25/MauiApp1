@@ -51,7 +51,7 @@
 </Grid>
 
 
-	
+
 <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
@@ -108,7 +108,7 @@
 </VerticalStackLayout>
 
 
-	
+
 <HorizontalStackLayout>
 	<Label
 			Text="Új ország felvétele"
