@@ -1,0 +1,65 @@
+<ScrollView>
+
+		<VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+			<Label
+                Text="Új ország felvétele"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+			<HorizontalStackLayout Margin="20, 0">
+		        <Label
+					Text="Ország:"
+					FontSize="Medium"
+					VerticalTextAlignment="Center" 
+					Margin="0, 0, 15, 0"/> 
+				
+				<Entry x:Name="orszag"
+                    Placeholder="Írja be az ország nevét:"
+                    TextChanged="OnEntryTextChanged"
+                    Completed="OnEntryCompleted" />
+			</HorizontalStackLayout>
+
+			<HorizontalStackLayout Margin="20, 0">
+				<Label
+					Text="Terület:"
+					FontSize="Medium"
+					VerticalTextAlignment="Center" 
+					Margin="0, 0, 15, 0"/>
+
+				<Entry x:Name="terulet"
+                    Placeholder="Írja be a területet:"
+                    TextChanged="OnEntryTextChanged"
+                    Completed="OnEntryCompleted" />
+			</HorizontalStackLayout>
+			
+			<HorizontalStackLayout Margin="20, 0">
+				<Label
+					Text="Népesség:"
+					FontSize="Medium"
+					VerticalTextAlignment="Center" 
+					Margin="0, 0, 15, 0"/>
+
+				<Entry x:Name="nepesseg"
+                    Placeholder="Írja be a népesség számát:"
+                    TextChanged="OnEntryTextChanged"
+                    Completed="OnEntryCompleted" />
+			</HorizontalStackLayout>
+			
+			<HorizontalStackLayout Margin="20, 0">
+				<Label
+					Text="Fõváros:"
+					FontSize="Medium"
+					VerticalTextAlignment="Center" 
+					Margin="0, 0, 15, 0"/>
+
+				<Entry x:Name="fovaros"
+                    Placeholder="Írja be a fõváros nevét:"
+                    TextChanged="OnEntryTextChanged"
+                    Completed="OnEntryCompleted" />
+			</HorizontalStackLayout>
+			
+		</VerticalStackLayout>
+    </ScrollView>
